@@ -1,5 +1,5 @@
 nav {
-    background: $primarycolor;
+    background: $secondarycolor;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -98,14 +98,21 @@ nav .header {
 //css women's header//
 .women-box {
     position: absolute;
-    bottom: 0;
+    top: -500%;
+    bottom: auto;
     width: 100%;
     left: 0;
-    transform: translatey(100%);
-    display: none;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
 }
 .women-show:hover .women-box {
-    display: block;
+    top: auto;
+    bottom: 0;
+    transform: translatey(100%);
+    opacity: 1;
+    visibility: visible;
 }
 .women-box .women-content {
     background: $secondarycolor;
@@ -203,6 +210,42 @@ nav .header {
         margin: 0;
     }
     .men-content .men-row .header {
+        font-size: 19px;
+    }
+
+    .nav-header .women-box {
+        position: unset;
+        width: 100%;
+        padding: 0 20px;
+        display: none;
+    }
+    .women-show:hover .women-box{
+        transform: unset;
+        display: block;
+    }
+    .women-box .women-content {
+        background: $secondarycolor;
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+    }
+    .women-content .women-row:nth-child(1),
+    .women-content .women-row:nth-child(2) {
+        border-top: 0px;
+    }
+    .women-box .women-content .women-row {
+        width: 100%;
+        margin-bottom: 15px;
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .women-content .women-row .women-links {
+        border-left: 0px;
+        padding-left: 15px;
+    }
+    .women-row .women-links li {
+        margin: 0;
+    }
+    .women-content .women-row .header {
         font-size: 19px;
     }
 }
