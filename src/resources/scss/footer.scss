@@ -1,0 +1,12 @@
+.foot-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.foot-col {
+    flex-basis: 25%;
+    padding: 10px;
+}

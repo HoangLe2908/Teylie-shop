@@ -5,22 +5,25 @@
     top: 80px;
 }
 .home img {
-    width: 100%;
+    width: 90%;
     height: 100vh;
 }
-.home .slide {
-    padding: 7rem;
+.background-header{
     display: flex;
-    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background: url(/img/background-content1.jpg) center/cover no-repeat;
+    height: 50vh;
+}
+.home .slide {
+    padding: 6rem;
+    height: 60vh;
     display: none;
 }
 .home .slide .content {
     margin: 70px;
     text-align: left;
     padding-top: 4rem;
-}
-.home .slide.active {
-    display: flex;
 }
 .home .slide .content span {
     color: $secondarycolor;
@@ -74,4 +77,95 @@
     bottom: 2rem;
     right: 2rem;
     text-align: center;
+}
+.category {
+    position: relative;
+    top: 100px;
+    padding: 0;
+}
+.category .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+}
+.category .box-container .box-cate {
+    text-align: center;
+    text-decoration: none;
+}
+.category .box-container .box-cate:hover h3 {
+    color: bisque;
+}
+.category .box-container .box-cate img {
+    height: 14rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    border-radius: 5px;
+}
+.category .box-container .box-cate h3 {
+    font-size: 1.2rem;
+    color: $textcolor;
+    font-weight: normal;
+}
+
+.about {
+    position: relative;
+    top: 100px;
+    padding: 0;
+}
+.about-us {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 60px 100px;
+}
+.about-us .img-about {
+    width: 100%;
+}
+.about-us .img-about img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 4rem 4rem 0 #eee;
+}
+.about-us .content-us {
+    flex: 1 1 42rem;
+}
+.about-us .content-us .box-us {
+    padding: 3rem;
+    background: #eee;
+}
+.about-us .content-us .box-us h3 {
+    font-size: 2.5rem;
+    color: #222;
+}
+.about-us .content-us .box-us p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: #666;
+    font-size: 1.4rem;
+}
+.about-us .content-us .icons-container-us {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.about-us .content-us .icons-container-us .icons-us {
+    flex: 1 1 16rem;
+    background: #eee;
+    padding: 2rem;
+    text-align: center;
+}
+.about-us .content-us .icons-container-us .icons-us i {
+    color: $primarycolor;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+.about-us .content-us .icons-container-us .icons-us p {
+    font-size: 1.4rem;
+    color: #666;
 }

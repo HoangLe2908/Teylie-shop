@@ -1,6 +1,8 @@
 @import "variables";
 @import "header";
 @import "home";
+@import "footer";
+@import "contract";
 
 *{
     padding: 0;
@@ -8,6 +10,23 @@
     box-sizing: border-box;
     font-family: "Merriweather", serif;
 }
- section {
-    padding: 80px 0;
+// html {
+//     scroll-behavior: smooth;
+//     scroll-padding-top: 6rem;
+//     overflow-x: hidden;
+//     top: 80px;
+//     height: 100vh;
+// }
+section {
+    padding: 2rem 9%;
+}
+.footer-app {
+    width: 100%;
+    bottom: 0;
+    background: rgb(247, 222, 191);
+    color: black;
+    margin-top: 80px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    font-size: 13px;
 }
