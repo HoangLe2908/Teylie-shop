@@ -5,8 +5,55 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    flex-direction: row;
+    height: 50vh;
+}
+.foot-row p {
+    word-spacing: 6px;
+}
+.foot-row h3 {
+    color: $textcolor;
+}
+.foot-row a {
+    text-decoration: none;
+    color: black;
+}
+.foot-row a:hover {
+    color: $textcolor;
+}
+.foot-infor {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 .foot-col {
-    flex-basis: 25%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 40vh;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.foot-infor img {
+    height: 25vh;
+}
+.foot-infor p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+.foot-time {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 20vh;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.foot-about {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 20vh;
+    justify-content: space-between;
+    padding-top: 25px;
 }

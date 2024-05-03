@@ -122,20 +122,46 @@
     padding: 60px 100px;
 }
 .about-us .img-about {
-    width: 100%;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
 }
 .about-us .img-about img{
-    width: 50%;
-    height: 300px;
+    width: 80%;
+    height: 50%;
     object-fit: cover;
     box-shadow: 4rem 4rem 0 #eee;
+    border-radius: 5px;
 }
 .about-us .content-us {
     flex: 1 1 42rem;
+    height: 100vh;
 }
 .about-us .content-us .box-us {
     padding: 3rem;
     background: #eee;
+    height: 60vh;
+    border-radius: 5px;
+}
+.about-us .content-us .box-us a {
+    background: $primarycolor;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    color: black;
+    transition: 0.3s;
+}
+.about-us .content-us .box-us a:hover {
+    background: rgba(233, 205, 194, 1);
+    font-size: 18px;
+    color: $textcolor;
 }
 .about-us .content-us .box-us h3 {
     font-size: 2.5rem;
@@ -166,6 +192,6 @@
     font-size: 5rem;
 }
 .about-us .content-us .icons-container-us .icons-us p {
-    font-size: 1.4rem;
-    color: #666;
+    font-size: 16px;
+    color: $textcolor;
 }

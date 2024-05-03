@@ -347,20 +347,46 @@ nav .header {
   padding: 60px 100px; }
 
 .about-us .img-about {
-  width: 100%; }
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  border-radius: 5px; }
 
 .about-us .img-about img {
-  width: 50%;
-  height: 300px;
+  width: 80%;
+  height: 50%;
   object-fit: cover;
-  box-shadow: 4rem 4rem 0 #eee; }
+  box-shadow: 4rem 4rem 0 #eee;
+  border-radius: 5px; }
 
 .about-us .content-us {
-  flex: 1 1 42rem; }
+  flex: 1 1 42rem;
+  height: 100vh; }
 
 .about-us .content-us .box-us {
   padding: 3rem;
-  background: #eee; }
+  background: #eee;
+  height: 60vh;
+  border-radius: 5px; }
+
+.about-us .content-us .box-us a {
+  background: #e9cdc2;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  color: black;
+  transition: 0.3s; }
+
+.about-us .content-us .box-us a:hover {
+  background: #e9cdc2;
+  font-size: 18px;
+  color: #01419c; }
 
 .about-us .content-us .box-us h3 {
   font-size: 2.5rem;
@@ -391,8 +417,8 @@ nav .header {
   font-size: 5rem; }
 
 .about-us .content-us .icons-container-us .icons-us p {
-  font-size: 1.4rem;
-  color: #666; }
+  font-size: 16px;
+  color: #01419c; }
 
 .foot-row {
   width: 85%;
@@ -400,11 +426,74 @@ nav .header {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-direction: row;
+  height: 50vh; }
+
+.foot-row p {
+  word-spacing: 6px; }
+
+.foot-row h3 {
+  color: #01419c; }
+
+.foot-row a {
+  text-decoration: none;
+  color: black; }
+
+.foot-row a:hover {
+  color: #01419c; }
+
+.foot-infor {
+  display: flex;
+  flex-direction: column;
+  width: 30%; }
 
 .foot-col {
-  flex-basis: 25%;
-  padding: 10px; }
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 40vh;
+  justify-content: space-between;
+  padding-top: 25px; }
+
+.foot-infor img {
+  height: 25vh; }
+
+.foot-infor p {
+  font-size: 14px;
+  padding: 10px 0; }
+
+.foot-time {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 20vh;
+  justify-content: space-between;
+  padding-top: 25px; }
+
+.foot-about {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 20vh;
+  justify-content: space-between;
+  padding-top: 25px; }
+
+.background-contact {
+  position: relative;
+  padding: 0;
+  top: 80px; }
+
+.background-contact img {
+  width: 90%;
+  height: 100vh; }
+
+.background-header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/bodymist-home.jpg) center/cover no-repeat;
+  height: 50vh; }
 
 .contact {
   width: 100%;
@@ -412,8 +501,7 @@ nav .header {
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 83px; }
+  margin: 100px 0; }
 
 .contact .content-contact {
   display: flex;

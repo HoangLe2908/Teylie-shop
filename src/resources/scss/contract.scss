@@ -1,12 +1,26 @@
-
+.background-contact {
+  position: relative;
+  padding: 0;
+  top: 80px;
+}
+.background-contact img {
+  width: 90%;
+  height: 100vh;
+}
+.background-header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/bodymist-home.jpg) center/cover no-repeat;
+  height: 50vh;
+}
 .contact{
     width: 100%;
     background: #fff;
     border-radius: 6px;
     padding: 20px 60px 30px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: 83px;
+    margin: 100px 0;
   }
   .contact .content-contact{
     display: flex;
