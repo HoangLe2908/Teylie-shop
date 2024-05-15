@@ -3,6 +3,8 @@
 @import "home";
 @import "footer";
 @import "contract";
+@import "aboutUs";
+@import "setting";
 
 *{
     padding: 0;
@@ -23,15 +25,17 @@ section {
 .links-shop {
     position: fixed;
     top: 160px;
-    margin: 34px 20px;
     display: flex;
     flex-direction: column;
+    left: 3px;
+    width: 3%;
 }
 .link-fb,
 .link-ins,
 .link-tik,
 .link-shopee {
-    width: 15%;
+    width: 100%;
+    height: 100%;
 }
 .links-shop .link-fb img {
     width: 100%;
@@ -60,7 +64,5 @@ section {
     background: rgb(247, 222, 191);
     color: black;
     margin-top: 80px;
-    border-top-left-radius: 125px;
-    border-top-right-radius: 125px;
     font-size: 13px;
 }
